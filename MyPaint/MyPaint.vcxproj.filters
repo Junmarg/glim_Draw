@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="App">
+      <UniqueIdentifier>{6d9d7ae2-47f4-5685-a1ca-e1a90e06f9bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Canvas">
+      <UniqueIdentifier>{c9135a12-52bb-5a33-9e35-8fc208d4f171}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Canvas\Core">
+      <UniqueIdentifier>{a257bc9a-06a9-5297-bbe2-11ec425c1d74}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Canvas\Drawing Tools">
+      <UniqueIdentifier>{9500c0fe-9ab8-50c4-852d-702aec215e27}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Canvas\Selection and Transform">
+      <UniqueIdentifier>{89eced5f-8334-5bb9-a74f-23842fb91660}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Canvas\View">
+      <UniqueIdentifier>{47941d5a-1851-5fbf-afcb-ec9ad7b626d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics Engine">
+      <UniqueIdentifier>{105d8a86-fb83-5a2e-a08f-e283a202a108}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI Controls">
+      <UniqueIdentifier>{cbb7fc0c-52c5-5d34-b859-7b9483092307}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dialogs">
+      <UniqueIdentifier>{53ee008b-00b2-58a1-b063-4d79d5c91603}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Printing">
+      <UniqueIdentifier>{25fb9f26-ab9c-54cf-85ca-8aa61e57df7d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Function Graph">
+      <UniqueIdentifier>{e499640c-82fc-5468-9202-73fe97c854c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{5fb56799-46c6-5c1d-b122-87c2b41db8ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{03923087-157e-51ea-bf03-4a6e29aace79}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BrushEngine.h">
+      <Filter>Graphics Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="CanvasInternal.h">
+      <Filter>Canvas\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="CanvasWnd.h">
+      <Filter>Canvas\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="FullScreenWnd.h">
+      <Filter>UI Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="FunctionGraph.h">
+      <Filter>Function Graph</Filter>
+    </ClInclude>
+    <ClInclude Include="FunctionGraphDlg.h">
+      <Filter>Function Graph</Filter>
+    </ClInclude>
+    <ClInclude Include="Polynomial.h">
+      <Filter>Function Graph</Filter>
+    </ClInclude>
+    <ClInclude Include="ImageHistory.h">
+      <Filter>Graphics Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="ImagePropertiesDlg.h">
+      <Filter>Dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="PickerPopup.h">
+      <Filter>UI Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="Printing.h">
+      <Filter>Printing</Filter>
+    </ClInclude>
+    <ClInclude Include="RasterOps.h">
+      <Filter>Graphics Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="ResizeSkewDlg.h">
+      <Filter>Dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="Shapes.h">
+      <Filter>Graphics Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="StatusStrip.h">
+      <Filter>UI Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="Theme.h">
+      <Filter>UI Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="TopBar.h">
+      <Filter>UI Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="MyPaint.h">
+      <Filter>App</Filter>
+    </ClInclude>
+    <ClInclude Include="MyPaintDlg.h">
+      <Filter>App</Filter>
+    </ClInclude>
+    <ClInclude Include="framework.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="BrushEngine.cpp">
+      <Filter>Graphics Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="CanvasSelection.cpp">
+      <Filter>Canvas\Selection and Transform</Filter>
+    </ClCompile>
+    <ClCompile Include="CanvasShape.cpp">
+      <Filter>Canvas\Drawing Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="CanvasTransform.cpp">
+      <Filter>Canvas\Selection and Transform</Filter>
+    </ClCompile>
+    <ClCompile Include="CanvasView.cpp">
+      <Filter>Canvas\View</Filter>
+    </ClCompile>
+    <ClCompile Include="CanvasText.cpp">
+      <Filter>Canvas\Drawing Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="CanvasTools.cpp">
+      <Filter>Canvas\Drawing Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="CanvasWnd.cpp">
+      <Filter>Canvas\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="FullScreenWnd.cpp">
+      <Filter>UI Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="FunctionGraph.cpp">
+      <Filter>Function Graph</Filter>
+    </ClCompile>
+    <ClCompile Include="FunctionGraphDlg.cpp">
+      <Filter>Function Graph</Filter>
+    </ClCompile>
+    <ClCompile Include="Polynomial.cpp">
+      <Filter>Function Graph</Filter>
+    </ClCompile>
+    <ClCompile Include="ImageHistory.cpp">
+      <Filter>Graphics Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="ImagePropertiesDlg.cpp">
+      <Filter>Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="PickerPopup.cpp">
+      <Filter>UI Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="Printing.cpp">
+      <Filter>Printing</Filter>
+    </ClCompile>
+    <ClCompile Include="RasterOps.cpp">
+      <Filter>Graphics Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="ResizeSkewDlg.cpp">
+      <Filter>Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="Shapes.cpp">
+      <Filter>Graphics Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="StatusStrip.cpp">
+      <Filter>UI Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="Theme.cpp">
+      <Filter>UI Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="TopBar.cpp">
+      <Filter>UI Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="MyPaint.cpp">
+      <Filter>App</Filter>
+    </ClCompile>
+    <ClCompile Include="MyPaintDlg.cpp">
+      <Filter>App</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="MyPaint.rc">
+      <Filter>Resources</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\MyPaint.rc2">
+      <Filter>Resources</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\MyPaint.ico">
+      <Filter>Resources</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

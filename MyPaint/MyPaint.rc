@@ -1,0 +1,379 @@
+// Microsoft Visual C++ generated resource script.
+//
+#pragma code_page(65001)
+#include "Resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+#include "verrsrc.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE
+BEGIN
+    "Resource.h\0"
+END
+
+2 TEXTINCLUDE
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "#include ""verrsrc.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#include ""res\\MyPaint.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""      // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+IDR_MAINFRAME           ICON                    "res\\MyPaint.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAIN_MENU MENU
+BEGIN
+    POPUP "파일(&F)"
+    BEGIN
+        MENUITEM "새로 만들기(&N)\tCtrl+N",          ID_FILE_NEW_IMAGE
+        MENUITEM "열기(&O)...\tCtrl+O",              ID_FILE_OPEN_IMAGE
+        MENUITEM "저장(&S)\tCtrl+S",                 ID_FILE_SAVE_IMAGE
+        MENUITEM "다른 이름으로 저장(&A)...\tF12",   ID_FILE_SAVE_IMAGE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "인쇄(&P)...\tCtrl+P",              ID_FILE_PRINT_IMG
+        MENUITEM "인쇄 미리 보기(&V)...",            ID_FILE_PRINT_PREVIEW_IMG
+        MENUITEM "페이지 설정(&U)...",               ID_FILE_PAGE_SETUP_IMG
+        MENUITEM SEPARATOR
+        POPUP "바탕 화면 배경으로 설정(&B)"
+        BEGIN
+            MENUITEM "채우기(&F)",                   ID_FILE_WALLPAPER_FILL
+            MENUITEM "바둑판식 배열(&T)",            ID_FILE_WALLPAPER_TILE
+            MENUITEM "가운데(&C)",                   ID_FILE_WALLPAPER_CENTER
+        END
+        POPUP "최근 파일(&R)"
+        BEGIN
+            MENUITEM "(없음)",                       ID_FILE_RECENT_NONE, GRAYED
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "끝내기(&X)",                       ID_FILE_EXIT
+    END
+    POPUP "편집(&E)"
+    BEGIN
+        MENUITEM "실행 취소(&U)\tCtrl+Z",            ID_EDIT_UNDO_ACTION
+        MENUITEM "다시 실행(&R)\tCtrl+Y",            ID_EDIT_REDO_ACTION
+        MENUITEM SEPARATOR
+        MENUITEM "잘라내기(&T)\tCtrl+X",             ID_EDIT_CUT_SEL
+        MENUITEM "복사(&C)\tCtrl+C",                 ID_EDIT_COPY_SEL
+        MENUITEM "붙여넣기(&P)\tCtrl+V",             ID_EDIT_PASTE_IMG
+        MENUITEM "선택 영역 삭제(&D)\tDel",          ID_EDIT_DELETE_SEL
+        MENUITEM SEPARATOR
+        MENUITEM "모두 선택(&A)\tCtrl+A",            ID_EDIT_SELECT_ALL_IMG
+        MENUITEM "선택 영역 반전(&I)\tCtrl+Shift+I",  ID_EDIT_INVERT_SEL
+    END
+    POPUP "이미지(&I)"
+    BEGIN
+        MENUITEM "자르기(&C)\tCtrl+Shift+X",         ID_IMAGE_CROP
+        MENUITEM "크기 조정 및 기울이기(&Z)...\tCtrl+W", ID_IMAGE_RESIZE_SKEW
+        MENUITEM SEPARATOR
+        MENUITEM "오른쪽으로 90° 회전(&R)",          ID_IMAGE_ROTATE_RIGHT
+        MENUITEM "왼쪽으로 90° 회전(&L)",            ID_IMAGE_ROTATE_LEFT
+        MENUITEM "180° 회전(&T)",                    ID_IMAGE_ROTATE_180
+        MENUITEM "상하 대칭(&V)",                    ID_IMAGE_FLIP_VERTICAL
+        MENUITEM "좌우 대칭(&H)",                    ID_IMAGE_FLIP_HORIZONTAL
+        MENUITEM SEPARATOR
+        MENUITEM "투명 선택(&P)",                    ID_IMAGE_TRANSPARENT_SEL
+        MENUITEM SEPARATOR
+        MENUITEM "함수 그래프 넣기(&G)...\tCtrl+Shift+G", ID_IMAGE_FUNCTION_GRAPH
+        MENUITEM SEPARATOR
+        MENUITEM "이미지 속성(&A)...\tCtrl+E",       ID_IMAGE_PROPERTIES
+    END
+    POPUP "보기(&V)"
+    BEGIN
+        MENUITEM "확대(&I)\tCtrl+PgUp",              ID_VIEW_ZOOM_IN
+        MENUITEM "축소(&O)\tCtrl+PgDn",              ID_VIEW_ZOOM_OUT
+        MENUITEM "100%(&1)\tCtrl+0",                 ID_VIEW_ZOOM_100
+        MENUITEM SEPARATOR
+        MENUITEM "눈금자(&R)\tCtrl+R",               ID_VIEW_RULERS
+        MENUITEM "격자선(&G)\tCtrl+G",               ID_VIEW_GRID
+        MENUITEM "상태 표시줄(&S)",                  ID_VIEW_STATUSBAR
+        MENUITEM SEPARATOR
+        MENUITEM "전체 화면(&F)\tF11",               ID_VIEW_FULLSCREEN
+    END
+    POPUP "도움말(&H)"
+    BEGIN
+        MENUITEM "단축키 목록(&K)\tF1",              ID_HELP_SHORTCUTS
+    END
+END
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_ACCEL ACCELERATORS
+BEGIN
+    "N",            ID_FILE_NEW_IMAGE,      VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN_IMAGE,     VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE_IMAGE,     VIRTKEY, CONTROL, NOINVERT
+    VK_F12,         ID_FILE_SAVE_IMAGE_AS,  VIRTKEY, NOINVERT
+    "P",            ID_FILE_PRINT_IMG,      VIRTKEY, CONTROL, NOINVERT
+    "Z",            ID_EDIT_UNDO_ACTION,    VIRTKEY, CONTROL, NOINVERT
+    "Y",            ID_EDIT_REDO_ACTION,    VIRTKEY, CONTROL, NOINVERT
+    "X",            ID_EDIT_CUT_SEL,        VIRTKEY, CONTROL, NOINVERT
+    "C",            ID_EDIT_COPY_SEL,       VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE_IMG,      VIRTKEY, CONTROL, NOINVERT
+    VK_DELETE,      ID_EDIT_DELETE_SEL,     VIRTKEY, NOINVERT
+    "A",            ID_EDIT_SELECT_ALL_IMG, VIRTKEY, CONTROL, NOINVERT
+    "I",            ID_EDIT_INVERT_SEL,     VIRTKEY, SHIFT, CONTROL, NOINVERT
+    "X",            ID_IMAGE_CROP,          VIRTKEY, SHIFT, CONTROL, NOINVERT
+    "W",            ID_IMAGE_RESIZE_SKEW,   VIRTKEY, CONTROL, NOINVERT
+    "G",            ID_IMAGE_FUNCTION_GRAPH, VIRTKEY, SHIFT, CONTROL, NOINVERT
+    VK_PRIOR,       ID_VIEW_ZOOM_IN,        VIRTKEY, CONTROL, NOINVERT
+    VK_NEXT,        ID_VIEW_ZOOM_OUT,       VIRTKEY, CONTROL, NOINVERT
+    VK_ADD,         ID_SIZE_UP,             VIRTKEY, CONTROL, NOINVERT
+    VK_SUBTRACT,    ID_SIZE_DOWN,           VIRTKEY, CONTROL, NOINVERT
+    0xBB,           ID_SIZE_UP,             VIRTKEY, CONTROL, NOINVERT
+    0xBD,           ID_SIZE_DOWN,           VIRTKEY, CONTROL, NOINVERT
+    "E",            ID_IMAGE_PROPERTIES,    VIRTKEY, CONTROL, NOINVERT
+    "R",            ID_VIEW_RULERS,         VIRTKEY, CONTROL, NOINVERT
+    "G",            ID_VIEW_GRID,           VIRTKEY, CONTROL, NOINVERT
+    VK_F11,         ID_VIEW_FULLSCREEN,     VIRTKEY, NOINVERT
+    VK_F1,          ID_HELP_SHORTCUTS,      VIRTKEY, NOINVERT
+    "0",            ID_VIEW_ZOOM_100,       VIRTKEY, CONTROL, NOINVERT
+END
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MYPAINT_DIALOG DIALOGEX 0, 0, 640, 420
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_CLIPCHILDREN
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "MyPaint"
+FONT 9, "Malgun Gothic", 0, 0, 0x1
+BEGIN
+END
+
+IDD_PAGE_OPTIONS DIALOGEX 0, 0, 220, 150
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "페이지 설정"
+FONT 9, "Malgun Gothic", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "크기 조정",IDC_STATIC,7,7,206,52
+    CONTROL         "조정:",IDC_PS_ADJUST,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,14,21,36,10
+    EDITTEXT        IDC_PS_PERCENT,54,19,36,12,ES_NUMBER | WS_GROUP
+    LTEXT           "% (원래 크기 기준)",IDC_STATIC,94,21,110,8
+    CONTROL         "맞춤:",IDC_PS_FIT,"Button",BS_AUTORADIOBUTTON,14,39,36,10
+    EDITTEXT        IDC_PS_PAGES_W,54,37,26,12,ES_NUMBER | WS_GROUP
+    LTEXT           "×",IDC_STATIC,84,39,8,8
+    EDITTEXT        IDC_PS_PAGES_H,94,37,26,12,ES_NUMBER
+    LTEXT           "페이지 (가로 × 세로)",IDC_STATIC,124,39,86,8
+    GROUPBOX        "가운데 맞춤",IDC_STATIC,7,64,206,30
+    CONTROL         "가로",IDC_PS_CENTER_H,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,77,50,10
+    CONTROL         "세로",IDC_PS_CENTER_V,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,70,77,50,10
+    PUSHBUTTON      "용지, 여백, 프린터...",IDC_PS_PAPER,7,102,100,14
+    DEFPUSHBUTTON   "확인",IDOK,108,129,50,14
+    PUSHBUTTON      "취소",IDCANCEL,163,129,50,14
+END
+
+IDD_PRINT_PREVIEW DIALOGEX 0, 0, 300, 280
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "인쇄 미리 보기"
+FONT 9, "Malgun Gothic", 0, 0, 0x1
+BEGIN
+    LTEXT           "",IDC_PV_AREA,7,7,286,224
+    PUSHBUTTON      "< 이전",IDC_PV_PREV,7,238,40,14
+    CTEXT           "1 / 1 페이지",IDC_PV_PAGE,50,241,60,8
+    PUSHBUTTON      "다음 >",IDC_PV_NEXT,113,238,40,14
+    PUSHBUTTON      "페이지 설정...",IDC_PV_SETUP,160,238,60,14
+    LTEXT           "",IDC_PV_PRINTER,7,262,170,8
+    DEFPUSHBUTTON   "인쇄...",IDOK,188,259,50,14
+    PUSHBUTTON      "닫기",IDCANCEL,243,259,50,14
+END
+
+IDD_IMAGE_PROPERTIES DIALOGEX 0, 0, 200, 104
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "이미지 속성"
+FONT 9, "Malgun Gothic", 0, 0, 0x1
+BEGIN
+    LTEXT           "파일:",IDC_STATIC,10,10,26,8
+    LTEXT           "",IDC_IP_INFO,38,10,155,16,SS_PATHELLIPSIS
+    GROUPBOX        "캔버스 크기 (픽셀)",IDC_STATIC,7,30,186,48
+    LTEXT           "너비:",IDC_STATIC,14,45,30,8
+    EDITTEXT        IDC_IP_WIDTH,50,43,60,12,ES_NUMBER
+    LTEXT           "높이:",IDC_STATIC,14,61,30,8
+    EDITTEXT        IDC_IP_HEIGHT,50,59,60,12,ES_NUMBER
+    LTEXT           "늘어난 부분은 색 2",IDC_STATIC,116,61,74,8
+    DEFPUSHBUTTON   "확인",IDOK,88,84,50,14
+    PUSHBUTTON      "취소",IDCANCEL,143,84,50,14
+END
+
+IDD_FUNCTION_GRAPH DIALOGEX 0, 0, 430, 262
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "함수 그래프 넣기"
+FONT 9, "Malgun Gothic", 0, 0, 0x1
+BEGIN
+    LTEXT           "f(x) =",IDC_STATIC,7,9,24,8
+    COMBOBOX        IDC_FG_EXPR,33,7,167,120,CBS_DROPDOWN | CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "",IDC_FG_INFO,7,24,193,18
+    GROUPBOX        "범위",IDC_STATIC,7,44,193,62
+    LTEXT           "x:",IDC_STATIC,14,58,12,8
+    EDITTEXT        IDC_FG_XMIN,30,56,50,12,ES_AUTOHSCROLL
+    CTEXT           "~",IDC_STATIC,82,58,10,8
+    EDITTEXT        IDC_FG_XMAX,94,56,50,12,ES_AUTOHSCROLL
+    LTEXT           "y:",IDC_STATIC,14,76,12,8
+    EDITTEXT        IDC_FG_YMIN,30,74,50,12,ES_AUTOHSCROLL
+    CTEXT           "~",IDC_STATIC,82,76,10,8
+    EDITTEXT        IDC_FG_YMAX,94,74,50,12,ES_AUTOHSCROLL
+    CONTROL         "자동",IDC_FG_AUTOY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,150,75,45,10
+    LTEXT           "자동: x 범위의 함수값에 맞춰 y 범위를 정함",IDC_STATIC,14,91,182,8
+    GROUPBOX        "그림",IDC_STATIC,7,110,193,46
+    LTEXT           "크기:",IDC_STATIC,14,124,24,8
+    EDITTEXT        IDC_FG_WIDTH,40,122,40,12,ES_NUMBER
+    CTEXT           "×",IDC_STATIC,82,124,10,8
+    EDITTEXT        IDC_FG_HEIGHT,94,122,40,12,ES_NUMBER
+    LTEXT           "픽셀",IDC_STATIC,138,124,30,8
+    LTEXT           "선 굵기:",IDC_STATIC,14,140,30,8
+    EDITTEXT        IDC_FG_LINE,46,138,30,12,ES_NUMBER
+    LTEXT           "픽셀 (선 = 색 1, 배경 = 색 2)",IDC_STATIC,80,140,116,8
+    GROUPBOX        "표시",IDC_STATIC,7,160,193,62
+    CONTROL         "좌표축과 눈금",IDC_FG_AXES,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,173,85,10
+    CONTROL         "격자선",IDC_FG_GRID,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,104,173,85,10
+    CONTROL         "눈금·좌표 숫자",IDC_FG_LABELS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,187,85,10
+    CONTROL         "근·극값 점",IDC_FG_POINTS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,104,187,85,10
+    CONTROL         "수식",IDC_FG_FORMULA,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,201,85,10
+    CONTROL         "배경 투명",IDC_FG_TRANSPARENT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,104,201,85,10
+    LTEXT           "미리 보기",IDC_STATIC,208,9,60,8
+    CONTROL         "",IDC_FG_PREVIEW,"Static",SS_OWNERDRAW,208,20,215,150
+    LTEXT           "",IDC_FG_DETAILS,208,176,215,50
+    LTEXT           "넣은 그래프는 선택 영역처럼 옮기거나 크기를 바꿀 수 있습니다.",IDC_STATIC,7,231,300,8
+    DEFPUSHBUTTON   "그래프 넣기",IDOK,312,241,56,14
+    PUSHBUTTON      "취소",IDCANCEL,373,241,50,14
+END
+
+IDD_RESIZE_SKEW DIALOGEX 0, 0, 200, 176
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "크기 조정 및 기울이기"
+FONT 9, "Malgun Gothic", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "크기 조정",IDC_STATIC,7,7,186,86
+    LTEXT           "현재 크기:",IDC_RS_INFO,14,19,170,8
+    LTEXT           "단위:",IDC_STATIC,14,33,26,8
+    CONTROL         "백분율",IDC_RS_PERCENT,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,44,32,50,10
+    CONTROL         "픽셀",IDC_RS_PIXELS,"Button",BS_AUTORADIOBUTTON,98,32,50,10
+    LTEXT           "가로:",IDC_STATIC,14,49,30,8
+    EDITTEXT        IDC_RS_WIDTH,50,47,60,12,ES_NUMBER | WS_GROUP
+    LTEXT           "세로:",IDC_STATIC,14,65,30,8
+    EDITTEXT        IDC_RS_HEIGHT,50,63,60,12,ES_NUMBER
+    CONTROL         "가로 세로 비율 유지",IDC_RS_KEEP_ASPECT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,79,120,10
+    GROUPBOX        "기울이기 (도)",IDC_STATIC,7,98,186,50
+    LTEXT           "가로:",IDC_STATIC,14,113,30,8
+    EDITTEXT        IDC_RS_SKEW_X,50,111,60,12
+    LTEXT           "세로:",IDC_STATIC,14,129,30,8
+    EDITTEXT        IDC_RS_SKEW_Y,50,127,60,12
+    DEFPUSHBUTTON   "확인",IDOK,88,155,50,14
+    PUSHBUTTON      "취소",IDCANCEL,143,155,50,14
+END
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "FileDescription", "MyPaint"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "MyPaint.exe"
+            VALUE "OriginalFilename", "MyPaint.exe"
+            VALUE "ProductName", "MyPaint"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#include "res\\MyPaint.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"      // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
